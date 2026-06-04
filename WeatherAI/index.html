@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <h1>Weather Forecast</h1>
+        <p>Check current conditions and a 5-day outlook.</p>
+      </header>
+
+      <section class="controls">
+        <form id="search-form" autocomplete="off">
+          <label for="city-input" class="sr-only">City</label>
+          <input id="city-input" type="text" placeholder="Enter city name (e.g., London)" required />
+          <button type="submit">Search</button>
+        </form>
+        <button id="use-location" type="button">Use My Location</button>
+      </section>
+
+      <section id="status" class="status" aria-live="polite"></section>
+
+      <section id="current" class="card hidden" aria-label="Current weather"></section>
+      <section id="forecast" class="forecast hidden" aria-label="Forecast"></section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

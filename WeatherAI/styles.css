@@ -1,0 +1,166 @@
+﻿:root {
+  --bg: #f3f7ff;
+  --panel: #ffffff;
+  --text: #14213d;
+  --muted: #51627a;
+  --accent: #0f7bff;
+  --accent-dark: #005fd2;
+  --border: #d9e3f3;
+  --ok: #0c8a45;
+  --warn: #bf360c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #eaf1ff 0%, #f7faff 100%);
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  color: var(--muted);
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+#search-form {
+  display: flex;
+  flex: 1 1 320px;
+  gap: 0.5rem;
+}
+
+input,
+button {
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.75rem 0.9rem;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background: var(--accent-dark);
+}
+
+#use-location {
+  background: #e7f0ff;
+  color: #003f8a;
+  border: 1px solid #c7ddff;
+}
+
+#use-location:hover {
+  background: #d9e8ff;
+}
+
+.status {
+  min-height: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.status.error {
+  color: var(--warn);
+}
+
+.status.success {
+  color: var(--ok);
+}
+
+.card,
+.forecast article {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(20, 33, 61, 0.06);
+}
+
+.card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.current-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.temp {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.meta {
+  display: grid;
+  gap: 0.4rem;
+  color: var(--muted);
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.75rem;
+}
+
+.forecast article {
+  padding: 0.8rem;
+}
+
+.forecast h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.range {
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
