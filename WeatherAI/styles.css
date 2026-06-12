@@ -18,7 +18,8 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text);
-  background: linear-gradient(180deg, #eaf1ff 0%, #f7faff 100%);
+  /*background: linear-gradient(180deg, #2b6dbc 0%, #d9e3f3 100%); */
+  background-image: url("./images/weather-background.jpg"); 
   min-height: 100vh;
 }
 
@@ -35,7 +36,7 @@ body {
 
 .hero p {
   margin-top: 0.5rem;
-  color: var(--muted);
+  color: var(--panel);
 }
 
 .controls {
@@ -88,7 +89,7 @@ button:hover {
 .status {
   min-height: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--muted);
+  color: var(--panel);
 }
 
 .status.error {

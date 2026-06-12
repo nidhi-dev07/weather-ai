@@ -32,11 +32,6 @@ function setStatus(message, type = "") {
   statusEl.className = `status ${type}`.trim();
 }
 
-function clearStatus() {
-  statusEl.textContent = "";
-  statusEl.className = "status";
-}
-
 function formatDay(dateString) {
   return new Date(dateString).toLocaleDateString(undefined, { weekday: "short" });
 }
